@@ -20,8 +20,8 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <Header />
-      <Router>
+        <Header />
+        <Router>
             <div>
                 <nav id="leftMenu">
                     <div>
@@ -46,7 +46,8 @@ function App() {
                         <Link to="/functions">Built-in functions</Link>
                     </div>
                 </nav>
-
+               
+                <div id="infoContainer">
                 <Switch>
                     <Route path="/requests">
                         <Requests />
@@ -70,6 +71,7 @@ function App() {
                         <Home />
                     </Route>
                 </Switch>
+                </div>
             </div>
         </Router>
     </div>
