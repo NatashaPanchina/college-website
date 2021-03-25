@@ -3,17 +3,19 @@ import Header from "./header/Header";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import Home from "./home/Home";
-import About from "./about/About";
-import Structure from "./structure/Structure";
+import Menu from "./menu/Menu";
+import Tools from "./tools/Tools";
+import Database from "./database/Database";
+import Columns from "./columns/Columns";
 import Operations from "./operations/Operations";
 import Requests from "./requests/Requests";
+import Partwo from "./partwo/Partwo";
 import Tables from "./tables/Tables";
-import Functions from "./functions/Functions";
+
 
 import "./App.css";
 
@@ -23,29 +25,7 @@ function App() {
         <Header />
         <Router>
             <div>
-                <nav id="leftMenu">
-                    <div>
-                        <Link to="/about">About autor</Link>
-                    </div>
-                    <div>
-                        <Link to="/">NySQL Intro</Link>
-                    </div>
-                    <div>
-                        <Link to="/structure">Data structure</Link>
-                    </div>
-                    <div>
-                        <Link to="/operations">Basic data operations</Link>
-                    </div>
-                    <div>
-                        <Link to="/requests">Requests</Link>
-                    </div>
-                    <div>
-                        <Link to="/tables">Joining tables</Link>
-                    </div>
-                    <div>
-                        <Link to="/functions">Built-in functions</Link>
-                    </div>
-                </nav>
+                <Menu />
                
                 <div id="infoContainer">
                 <Switch>
@@ -55,17 +35,20 @@ function App() {
                     <Route path="/tables">
                         <Tables />
                     </Route>
-                    <Route path="/functions">
-                        <Functions />
+                    <Route path="/partwo">
+                        <Partwo />
                     </Route>
                     <Route path="/operations">
                         <Operations />
                     </Route>
-                    <Route path="/structure">
-                        <Structure />
+                    <Route path="/columns">
+                        <Columns />
                     </Route>
-                    <Route path="/about">
-                        <About />
+                    <Route path="/database">
+                        <Database />
+                    </Route>
+                    <Route path="/tools">
+                        <Tools />
                     </Route>
                     <Route path="/">
                         <Home />
