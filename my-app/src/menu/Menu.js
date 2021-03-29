@@ -8,59 +8,35 @@ function Menu() {
     <nav id="leftMenu">
         <div>
             <NavLink exact to="/" 
-                activeStyle={{
-                fontWeight: 450,
-                color: "#daa520",
-                }}>NySQL Intro</NavLink>
+                activeClassName="selected">NySQL Intro</NavLink>
         </div>
         <div>
             <NavLink exact to="/tools"
-                activeStyle={{
-                fontWeight: 450,
-                color: "#daa520",
-                }}>MySQL Tools</NavLink>
+               activeClassName="selected">MySQL Tools</NavLink>
         </div>
         <div>
             <NavLink exact to="/database"
-                activeStyle={{
-                fontWeight: 450,
-                color: "#daa520",
-                }}>Database and tables</NavLink>
+                activeClassName="selected">Database and tables</NavLink>
         </div>
         <div>
             <NavLink exact to="/columns"
-                activeStyle={{
-                fontWeight: 450,
-                color: "#daa520",
-                }}>Changing tables and columns</NavLink>
+                activeClassName="selected">Changing tables and columns</NavLink>
         </div>
         <div>
             <NavLink exact to="/operations"
-                activeStyle={{
-                fontWeight: 450,
-                color: "#daa520",
-                }}>Basic data operations</NavLink>
+                activeClassName="selected">Basic data operations</NavLink>
         </div>
         <div>
             <NavLink exact to="/requests"
-                activeStyle={{
-                fontWeight: 450,
-                color: "#daa520",
-                }}>Requests. Part 1</NavLink>
+                activeClassName="selected">Requests. Part 1</NavLink>
         </div>
         <div>
             <NavLink exact to="/partwo"
-                activeStyle={{
-                fontWeight: 450,
-                color: "#daa520",
-                }}>Requests. Part 2</NavLink>
+                activeClassName="selected">Requests. Part 2</NavLink>
         </div>
         <div>
             <NavLink exact to="/tables"
-                activeStyle={{
-                fontWeight: 450,
-                color: "#daa520",
-                }}>Joining tables</NavLink>
+                activeClassName="selected">Joining tables</NavLink>
         </div>
     </nav>
     );

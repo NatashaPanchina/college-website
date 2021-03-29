@@ -2,7 +2,7 @@ a, Link {
     text-decoration: none;
     color:black;
   }
-  
+
   #infoContainer {
     margin-left: 216px;
     margin-top: 70px;
@@ -34,6 +34,11 @@ a, Link {
   }
   
   #leftMenu a:hover {
+    color: #daa520;
+  }
+  
+  .selected {
+    font-weight: 450;
     color: #daa520;
   }
   
