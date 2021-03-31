@@ -1,0 +1,28 @@
+
+#header {    
+    display: flex;
+}
+
+#header div {
+    padding: 10px;
+    background-color: #282c34;
+    position: fixed;
+    width: 100vw;
+    font-weight: 450;
+    font-size: large;
+}
+#header a {
+    display: flex;
+    color:goldenrod;
+}
+
+#title {
+    padding: 10px;
+    align-items: center;
+}
+
+#section {
+    color: white;
+   
+}
+
